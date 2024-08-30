@@ -429,15 +429,14 @@ across all 22 human UGT genes was annotated.</p>
 the functional consequence of UGT missense variants was predicted by
 multiple functionality prediction algorithms through ANNOVAR, as well as
 implementing an ADME-optimized framework and extracting the predictions
-from AlphaMissense (in script
-<code>3.1_extract_AlphaMissense_scores.sh</code>).</p>
+from AlphaMissense.</p>
 <ul>
 <li><p><em>3.1.1 ANNOVAR input file preparation</em>: variant input
 files were prepared to annotate them and predict their effects running
 ANNOVAR.</p>
 <ul>
 <li>ANNOVAR was run for multiple variant sets in
-<code>3.2_run_ANNOVAR.sh</code></li>
+<code>3.1_run_ANNOVAR.sh</code></li>
 </ul></li>
 <li><p><em>3.1.2 Examination of ANNOVAR gene-based annotation
 output</em>: we confirmed all input missense variants are annotated as
@@ -451,7 +450,9 @@ assessment in pharmacogenes developed in <a href="https://www.nature.com/article
 2018</a> was implemented.</p></li>
 <li><p><em>3.1.4 Extract AlphaMissense (AM) predictions for all UGT
 variants</em>: the AM scores and predictions for UGT missense variants
-were retrieved from the AM catalog.</p></li>
+were obtained. Variant data for canonical txs was retrieved from the AM
+catalog in script
+<code>3.2_extract_AlphaMissense_scores.sh</code>.</p></li>
 <li><p><em>3.1.5 Comparison and evaluation of predictive
 algorithms</em>: the predictive outputs of all methods were contrasted
 and their predictive performance evaluated using <a href="https://www.ncbi.nlm.nih.gov/clinvar/">ClinVar</a> variants as
@@ -494,6 +495,8 @@ across the same human populations. As no South Asian data were available
 in gnomAD, we manually calculated the frequency of these variants in
 this population based on previous reports in the literature.</p></li>
 </ul>
+<p><strong>Note</strong>: analysis with COSMIC data and structural
+modeling were performed by Yitian Zhou.</p>
 </div>
 
 

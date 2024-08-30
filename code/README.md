@@ -50,6 +50,6 @@ The functional effect (deleterious/neutral) of the exonic variants across all 22
 
 
 
-
+**Note**: analysis with COSMIC data and structural modeling were performed by Yitian Zhou.  
 
 
