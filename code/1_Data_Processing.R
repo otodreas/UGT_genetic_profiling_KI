@@ -1049,7 +1049,7 @@ barplot_exonic_variants_anno <- function(gene_family){
     
     ## Confirm length of CDS
     ## Extract CDS of canonical gene tx
-    fastaFile =  phylotools::read.fasta(paste0("raw-data/CDS_seq_data/Homo_sapiens_", gene_txs[[gene]], "_sequence.fasta"))
+    fastaFile =  phylotools::read.fasta(paste0("raw-data/CDS_seq_data/Homo_sapiens_", gene_txs[[gene]], "_sequence.fasta"))  # phylotools is no longer available on cran
     cds_sequence = strsplit(fastaFile$seq.text[1], '')[[1]]
     
     if(length(cds_sequence)==exon_limits_sum){
