@@ -408,6 +408,7 @@ p7 <- ggplot(constraint_metrics, aes(x=diff_Ratio_ob_exp, y=oe_syn, color = Gene
 
 
 
+# Fig 1E (p1)
 plot_grid(p1, p2, p3, p4, p5, p6, p7, nrow=2, rel_widths = c(1,1,1,1,1,1.5,1.5))
 ggsave('plots/02_Constraint_analysis/Corr_plots.pdf', width = 20, height = 7.5)
 

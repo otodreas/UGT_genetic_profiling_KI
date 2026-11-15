@@ -1340,6 +1340,7 @@ p3 <- ggplot(var_data, aes(fill=factor(annotation, levels=ordered_annotations), 
         axis.title = element_text(size = (11.5), face='bold'))
 
 ## Plots for gene families
+# Fig 1B, Fig 1C
 plot_grid(p1, p2, p3, nrow = 1, rel_widths = c(0.9, 1, 0.89))
 ggsave(filename=paste0('plots/01_Data_Processing/Num_variants_per_gene_fam.pdf'), width = 17, height = 5.5)
 
@@ -1469,6 +1470,7 @@ ggplot(data = quantiles, aes(x = Quantile, y= log10MAF, color = maf_cat)) +
         legend.title = element_text(size =10, face='bold'),
         axis.title = element_text(size = (11), face='bold'))
 
+# Fig 1D; axes are flipped from paper
 ggsave(filename=paste0('plots/01_Data_Processing/MAF_all_vars.pdf'), width = 6, height = 4.2)
 
 
