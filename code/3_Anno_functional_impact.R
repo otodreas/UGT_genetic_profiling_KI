@@ -791,7 +791,7 @@ for (i in 1:length(algorithms)){
   j=j+2
 }
 
-plot_grid(plots[[1]], plots[[2]], plots[[3]], plots[[4]], plots[[5]], plots[[6]], plots[[7]],<
+plot_grid(plots[[1]], plots[[2]], plots[[3]], plots[[4]], plots[[5]], plots[[6]], plots[[7]],<  # syntax error flagged by renv
           plots[[8]], plots[[9]], plots[[10]], plots[[11]], plots[[12]], plots[[13]], plots[[14]], 
           plots[[15]], plots[[16]], plots[[17]], plots[[18]], plots[[19]], plots[[20]], plots[[21]], plots[[22]], 
           plots[[23]], plots[[24]], plots[[25]], plots[[26]], plots[[27]], plots[[28]],
